@@ -6,7 +6,7 @@
 /*   By: gamoraes <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 17:51:04 by gamoraes          #+#    #+#             */
-/*   Updated: 2023/12/20 15:49:31 by gamoraes         ###   ########.fr       */
+/*   Updated: 2024/02/06 22:44:41 by gamoraes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,22 @@
 # include <stddef.h>
 # include <unistd.h>
 # include <stdarg.h>
+
+/*
+** Colors
+*/
+
+# define RED "\x1b[31m"
+# define BLUE	"\x1b[94m"
+# define GREEN "\x1b[32m"
+# define YELLOW	"\x1b[33m"
+# define RESET "\x1b[0m"
+
+/*
+** Functions
+*/
+
+int	ft_putcolor(char *color, char *s);
 
 int	ft_putchar(char c);
 

@@ -31,6 +31,14 @@ int	ft_checkformat(char type, va_list arg)
 		size += ft_puthx(va_arg(arg, unsigned int), "0123456789abcdef");
 	else if (type == 'X')
 		size += ft_puthx(va_arg(arg, unsigned int), "0123456789ABCDEF");
+	else if (type == 'g')
+		size += ft_putcolor(va_arg(arg, char *), GREEN);
+	else if (type == 'r')
+		size += ft_putcolor(va_arg(arg, char *), RED);
+	else if (type == 'b')
+		size += ft_putcolor(va_arg(arg, char *), BLUE);
+	else if (type == 'y')
+		size += ft_putcolor(va_arg(arg, char *), YELLOW);
 	else if (type == '%')
 		size += ft_putchar('%');
 	return (size);

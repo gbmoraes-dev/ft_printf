@@ -2,7 +2,7 @@ NAME = libftprintf.a
 
 SOURCES = ft_putchar.c ft_putstr.c ft_checkformat.c
 SOURCES += ft_putnbr.c ft_putnbr_uns.c ft_puthx.c
-SOURCES += ft_putptr.c ft_printf.c
+SOURCES += ft_putptr.c ft_putcolor.c ft_printf.c
 
 OBJECTS = $(SOURCES:.c=.o)
 
